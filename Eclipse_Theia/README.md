@@ -27,3 +27,5 @@ This is because Theia will create a web server located at the port 3000, doing t
 Now, you only have to enter: http://localhost and eclipse theia, using OmpSs@FPGA stack should be loaded.
 
 In addition, the autocompletion plugin is preloaded.
+
+![](image_theia.png)

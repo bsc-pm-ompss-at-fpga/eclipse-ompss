@@ -1,0 +1,7 @@
+<b>barrier</b>
+<br>
+The barrier construct specifies an explicit barrier at the point at which the construct appears.
+<br>
+The barrier construct is a stand-alone directive.
+<br>
+#pragma omp barrier

@@ -1,0 +1,98 @@
+{
+  "description": "FPGA 64bit",
+  "scope": "general",
+  "workspaceConfig": {
+    "commands": [
+      {
+        "commandLine": "cd ${current.project.path} && make",
+        "name": "build",
+        "type": "custom",
+        "attributes": {
+          "goal": "Run"
+        }
+      },
+      {
+        "name": "OmpSs Example",
+        "type": "custom",
+        "commandLine": "cp -r /example /projects",
+        "attributes": {}
+      }
+    ],
+    "environments": {
+      "default": {
+        "recipe": {
+          "type": "dockerimage",
+          "content": "ompss_fpga_2.4:che"
+        },
+        "machines": {
+          "dev-machine": {
+            "env": {
+              "PATH": "/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/arm64/mcxx/bin:/opt/arm64/ait/:/opt/arm64/ait/scripts:/opt/arm/mcxx/bin:/opt/arm/ait/scripts:/opt/arm/ait:/opt/wxparaver/bin:/opt/arm64/mcxx/bin:/opt/arm64/autoVivado/scripts",
+              "CROSS_COMPILE": "aarch64-linux-gnu-"
+            },
+            "servers": {},
+            "volumes": {},
+            "installers": [
+              "org.eclipse.che.exec",
+              "org.eclipse.che.terminal",
+              "org.eclipse.che.ws-agent"
+            ],
+            "attributes": {
+              "memoryLimitBytes": "2147483648"
+            }
+          }
+        }
+      }
+    },
+    "projects": [],
+    "defaultEnv": "default",
+    "name": "default",
+    "attributes": {},
+    "links": []
+  },
+  "components": [
+    {
+      "version": "---",
+      "name": "xtasks"
+    },
+    {
+      "version": "---",
+      "name": "xdma"
+    },
+    {
+      "version": "---",
+      "name": "extrae"
+    },
+    {
+      "version": "---",
+      "name": "mercurium"
+    },
+    {
+      "version": "---",
+      "name": "nanox"
+    },
+    {
+      "version": "---",
+      "name": "c++"
+    },
+    {
+      "version": "---",
+      "name": "fpga"
+    }
+  ],
+  "creator": "che",
+  "tags": [
+    "C++",
+    "gcc",
+    "make",
+    "xtasks",
+    "bsc",
+    "fpga",
+    "mcxx",
+    "xdma",
+    "nanox",
+    "extrae"
+  ],
+  "name": "OmpSs",
+  "id": "stackjedduzcnxef2ozzs"
+}

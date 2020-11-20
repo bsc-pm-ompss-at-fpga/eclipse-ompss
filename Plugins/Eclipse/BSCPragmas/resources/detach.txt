@@ -1,0 +1,12 @@
+<b>detach</b><br>
+If a detach clause is present on a task construct a new event allow-completion-event is created.
+The allow-completion-event is connected to the completion of the associated task region. The
+original event-handle will be updated to represent the allow-completion-event event before the task
+data environment is created. The event-handle will be considered as if it was specified on a
+firstprivate clause. The use of a variable in a detach clause expression of a task
+construct causes an implicit reference to the variable in all enclosing constructs.
+<br><br>
+If no detach clause is present on a task construct the generated task is completed when the
+execution of its associated structured-block is completed. If a detach clause is present on a task
+construct the task is completed when the execution of its associated structured-block is completed
+and the allow-completion-event is fulfilled.

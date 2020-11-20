@@ -1,0 +1,17 @@
+<b>sections</b><br>
+The parallel sections construct is a shortcut for specifying a parallel construct
+containing a sections construct and no other statements.
+
+<b>section</b><br>
+
+The syntax of the parallel sections construct is as follows:
+<br>
+<br>
+#pragma omp parallel <b>sections </b>[clause[ [,] clause] ... ] new-line<br>
+{<br>
+[#pragma omp <b>section</b> new-line]<br>
+ structured-block<br>
+ [#pragma omp <b>section</b> new-line<br>
+ structured-block]<br>
+ ...<br>
+ }<br>

@@ -1,0 +1,3 @@
+[submodule "Eclipse Che/ompss-at-fpga-releases"]
+	path = Eclipse Che/ompss-at-fpga-releases
+	url = https://gitlab.bsc.es/ompss-at-fpga/ompss-at-fpga-releases

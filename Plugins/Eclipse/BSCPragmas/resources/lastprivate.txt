@@ -1,0 +1,6 @@
+<b>lastprivate</b>
+<br>
+
+The <b>lastprivate</b> clause functions in a manner similar to the <b>private</b> clause and you should specify it for variables that match the same criteria.<br><br>
+
+ The exception is in the status of the variable on exit from the directive construct.<br> The compiler determines the last value of the variable, and takes a copy of that value which it saves in the named variable for use after the construct. A <b>lastprivate</b> variable is undefined on entry to the construct if it is not a <b>firstprivate</b> variable.

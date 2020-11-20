@@ -1,0 +1,28 @@
+<b> Declare reduction construct</b>
+
+<br>
+#pragma omp declare 
+reduction(reduction-identifier : type-list : combiner-expr) [initializer(init-expr)]
+<br>
+
+
+<b>reduction-identifier</b> is the identifier of the reduction which is being declared<br>
+
+
+
+<b>rtype-list</b> is a list of types
+<br>
+
+<b>combiner-expr</b> is the expression that specifies how we have to combine the partial results. <br>
+
+>init-expr is the expression that specifies how we have to initialize the private copies.<br>
+
+<br>
+
+#pragma omp declare //
+reduction(my_UDR : struct C : reducer(&omp_out,&omp_in)) initializer(omp_priv = {0})<br>
+<br>
+
+#pragma omp task //
+reduction(my_UDR : res) in(v) firstprivate(i)<br>
+<br>

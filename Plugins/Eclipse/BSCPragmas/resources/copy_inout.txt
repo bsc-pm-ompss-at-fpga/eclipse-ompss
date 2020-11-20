@@ -1,0 +1,3 @@
+<b>copy_inout</b><br>
+
+copy_inout(list-of-variables) - This clause is a combination of copy_in and copy_out.

@@ -1,0 +1,38 @@
+{
+	"name": "OmpSS-completion",
+	"displayName": "Completion Item Provider Sample",
+	"version": "1.0.0",
+	"publisher": "BSC",
+	"repository": {
+		"type": "git",
+		"url": "https://pm.bsc.es/gitlab/ompss-at-fpga"
+	},
+	"bugs": {
+		"url": "https://pm.bsc.es/gitlab/ompss-at-fpga"
+	},
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "tslint -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^10.12.18",
+		"@types/vscode": "^1.32.0",
+		"tslint": "^5.16.0",
+		"typescript": "^3.9.7"
+	},
+	"dependencies": {
+		"package.json": "^2.0.1"
+	}
+}

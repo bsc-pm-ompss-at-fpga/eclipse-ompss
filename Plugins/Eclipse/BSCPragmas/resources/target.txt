@@ -1,0 +1,37 @@
+<b>target</b><br>
+
+Map variables to a device data environment and execute the construct on that device.<br><br>
+
+<b>target update</b><br>
+The target update directive makes the corresponding list items in the device data environment
+consistent with their original list items, according to the specified motion clauses. The
+target update construct is a stand-alone directive.<br><br>
+<br>
+<b>target parallel</b><br>
+The target parallel construct is a shortcut for specifying a target construct containing a
+parallel construct and no other statements.
+<br>
+<b>target parallel loop</b><br>
+The target parallel loop construct is a shortcut for specifying a target construct
+containing a parallel loop construct and no other statements.
+<br>
+<b>target simd</b><br>
+The target simd construct is a shortcut for specifying a target construct containing a simd
+construct and no other statements.
+<br>
+
+<b>target teams</b><br>
+The target teams construct is a shortcut for specifying a target construct containing a
+teams construct and no other statements.
+<br>
+<b>target teams distribute</b><br>
+The target parallel construct is a shortcut for specifying a target construct containing a
+parallel construct and no other statements.
+<br>
+<b>target teams distribute simd</b><br>
+The target teams distribute construct is a shortcut for specifying a target construct
+containing a teams distribute construct and no other statements
+<br>
+<b>target teams loop</b><br>
+The target teams loop construct is a shortcut for specifying a target construct containing a
+teams loop construct and no other statements.

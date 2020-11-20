@@ -1,0 +1,3 @@
+<b>cost</b><br>
+cost([VALUE])<br>
+This clause gives hint to the runtime about the cost of the task.

@@ -1,0 +1,3 @@
+<b>copy_out</b><br>
+
+copy_out(list-of-variables) - It specifies that a set of shared data may be needed to be transferred from the device after the associated code is executed.

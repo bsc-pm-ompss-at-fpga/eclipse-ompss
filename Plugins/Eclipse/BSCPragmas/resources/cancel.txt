@@ -1,0 +1,8 @@
+The cancel construct can alter the previously described flow of execution in an OpenMP region. 
+The effect of the cancel construct depends on its construct-type-clause. If a task encounters a 
+cancel construct with a taskgroup construct-type-clause, then the task activates cancellation 
+and continues execution at the end of its task region, which implies completion of that task. Any 
+other task in that taskgroup that has begun executing completes execution unless it encounters a 
+cancellation point construct, in which case it continues execution at the end of its task 
+region, which implies its completion. Other tasks in that taskgroup region that have not begun 
+execution are aborted, which implies their completion. 

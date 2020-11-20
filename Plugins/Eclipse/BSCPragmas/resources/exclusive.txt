@@ -1,0 +1,10 @@
+<b>exclusive</b><br>
+
+
+If the list item appears in an
+<b>exclusive</b> clause and the iteration is not the last iteration, all statements in the structured block
+that lexically precede the directive constitute the scan phase and all statements in the structured
+block that lexically follow the directive constitute the input phase. If the list item appears in an
+<b>exclusive</b> clause and the iteration is the last iteration, the iteration does not have an input phase
+and all statements that lexically precede or follow the directive constitute the scan phase for the
+iteration

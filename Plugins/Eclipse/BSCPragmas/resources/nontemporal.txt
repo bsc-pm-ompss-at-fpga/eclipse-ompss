@@ -1,0 +1,4 @@
+<b>nontemporal</b><br>
+
+The nontemporal clause specifies that accesses to the storage locations to which the list items
+refer have low temporal locality across the iterations in which those storage locations are accessed.

@@ -1,0 +1,12 @@
+<b>if</b><br>
+
+An integral expression that, if it evaluates to true (nonzero),<br>
+causes the code in the parallel region to execute in parallel.<br>
+If the expression evaluates to false (zero),<br>
+the parallel region is executed in serial (by a single thread).<br>
+
+<br>
+<b>Example></b><br>
+int val = shouldItRunParallel(); <br>
+#pragma omp parallel if(val) <br>
+ 

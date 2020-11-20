@@ -1,0 +1,4 @@
+<b>firstprivate</b><br>
+<b>variable-type(var1, var2 ...)</b> <br>
+
+The variables affected by this directive will have a copy of it's value on the task. <br>

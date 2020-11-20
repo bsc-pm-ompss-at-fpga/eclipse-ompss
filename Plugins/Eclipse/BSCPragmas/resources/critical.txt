@@ -1,0 +1,20 @@
+<b>critical</b>
+
+The critical construct allows programmers to specify regions of code that will be executed in mutual exclusion. <br>
+The associated region will be executed by a single thread at a time, other threads will wait at the beginning of  <br>
+the critical section until no thread in the team was executing it. <br>
+ <br>
+The syntax of the critical construct is the following: <br>
+ <br>
+#pragma omp critical <br>
+structured-block <br>
+ <br>
+The syntax also allows named criticals with the following syntax: <br>
+ <br>
+#pragma omp critical(<name>) <br>
+structured-block <br>
+ <br>
+Named criticals prevent concurrency between threads with respect to all critical regions with the same name. <br>
+Unnammed criticals prevent concurrency between threads with respect to all unnamed critical regions. <br>
+ <br>
+The critical construct has no related clauses. <br>

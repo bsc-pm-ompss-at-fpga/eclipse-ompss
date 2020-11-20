@@ -1,0 +1,4 @@
+<b>inclusive</b><br>
+If the list item appears in an <b>inclusive</b> clause, all statements in the structured block that
+lexically precede the directive constitute the input phase and all statements in the structured block
+that lexically follow the directive constitute the scan phase.

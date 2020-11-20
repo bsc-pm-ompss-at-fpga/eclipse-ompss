@@ -1,0 +1,1 @@
+It's used to end the effect of some directives.

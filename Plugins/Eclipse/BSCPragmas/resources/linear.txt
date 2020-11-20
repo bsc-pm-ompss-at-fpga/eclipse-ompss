@@ -1,0 +1,9 @@
+<b>linear</b><br>
+The effect of the <b>linear</b> clause is as if it is applied to the innermost constituent construct.
+Additionally, if the list item is not the iteration variable of a simd or worksharing-loop SIMD
+construct, the effect on the outer constituent constructs is as if the list item was specified in
+firstprivate and lastprivate clauses on the combined or composite construct, with the
+ rules specified above applied. If a list item of the <b>linear</b> clause is the iteration variable of a
+ simd or worksharing-loop SIMD construct and it is not declared in the construct, the effect on the
+ outer constituent constructs is as if the list item was specified in a lastprivate clause on the
+ combined or composite construct with the rules specified above applied.

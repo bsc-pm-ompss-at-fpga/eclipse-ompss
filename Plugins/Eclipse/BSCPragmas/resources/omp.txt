@@ -1,0 +1,4 @@
+<b>Model Selection</b> <br>
+<b> OmpSs | OpenMP </b> <br>
+Follows the pragma annotation, specifies that we will use <b> OmpSs </b> or <b>OpenMP</b> Programming model.<br>
+<br>

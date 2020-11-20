@@ -1,0 +1,46 @@
+<b>taskwait</b>
+
+Apart from implicit synchronization (task dependences)<br>
+OmpSs also offers mechanism which allow users <br>
+to synchronize task execution. The taskwait construct <br>
+is an stand-alone directive (with no code block associated)<br>
+and specifies a wait on the completion of all direct descendant tasks.<br>
+
+
+The syntax of the taskwait construct is the following:<br>
+<ul>
+<li>#pragma oss taskwait [clauses]
+<li>The valid clauses for the taskwait construct are the following:
+<li>
+<li>on(list-of-variables) - It specifies to wait only for the subset (not all of them) of direct descendant tasks.
+</ul>
+
+The taskwait with an on clause only waits for those tasks referring<br>
+any of the variables appearing on the list of variables.<br>
+The on clause allows to wait only on the tasks that produces some data in the same way as in clause.<br>
+It suspends the current task until all previous tasks with an out over the expression are completed.<br> 
+The following example illustrates its use:<br><br>
+
+<ul>
+<li>int compute1 (void);
+<li>int compute2 (void);
+<li>
+<li>int main()
+<li>{
+<li>  int result1, result2;
+<li>
+<li>  #pragma omp task out(result1)
+<li>  result1 = compute1();
+<li>
+<li>  #pragma omp task out(result2)
+<li>  result2 = compute2();
+<li>
+<li>  #pragma omp taskwait on(result1)
+<li>  printf("result1 = %d\n",result1);
+<li>
+<li>  #pragma omp taskwait on(result2)
+<li>  printf("result2 = %d\n",result2);
+<li>
+<li>  return 0;
+<li>}
+</ul>

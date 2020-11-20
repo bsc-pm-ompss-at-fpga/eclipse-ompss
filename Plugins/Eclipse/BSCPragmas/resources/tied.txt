@@ -1,0 +1,6 @@
+<b>tied</b><br>
+
+The tied clause defines a new task scheduling restriction for the newly created tasks.
+Once a thread begins the execution of this task, the task becomes tied to this thread. 
+In the case this task has suspended its execution by any task scheduling point only the same thread 
+(i.e. the thread to which the task is tied to) may resume its execution.

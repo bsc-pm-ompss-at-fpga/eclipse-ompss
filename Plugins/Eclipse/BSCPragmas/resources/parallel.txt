@@ -1,0 +1,50 @@
+<b> parallel </b> 
+<br>
+5 The parallel construct creates a <b>team</b>  of OpenMP threads that execute the region.
+
+This construct can appear inside any code block of the program, which will mark the following statement as a task.
+</br>
+
+
+The basic clauses that can be used are:
+<ul>
+<li>if([parallel :] scalar-expression)                             </li>
+<li>num_threads(integer-expression)                                </li>
+<li>default(shared | none)                                         </li>
+<li>private(list)                                                  </li>
+<li>firstprivate(list)                                             </li>
+<li>shared(list)                                                   </li>
+<li>copyin(list)                                                   </li>
+<li>reduction([reduction-modifier ,] reduction-identifier : list)  </li>
+<li>proc_bind(master | close | spread)                             </li>
+<li>allocate([allocator :] list)                                   </li>
+
+</ul>
+<br>
+<br>
+It can be used in the following contexts:
+<br>
+</br>
+<ul>
+		<li>#pragma omp parallel                                   </li>
+		<li>#pragma omp parallel sections                          </li>
+		<li>#pragma omp parallel section                           </li>
+		<li>#pragma omp parallel for                               </li>
+		<li>#pragma omp parallel for simd                          </li>
+		<li>#pragma omp parallel loop	                           </li>
+		<li>#pragma omp parallel master                            </li>
+		<li>#pragma omp target parallel                            </li>
+		<li>#pragma omp target parallel for                        </li>
+		<li>#pragma omp target parallel for simd                   </li>
+		<li>#pragma omp target parallel loop                       </li>
+		<li>#pragma omp target teams distribute parallel for       </li>
+		<li>#pragma omp target teams distribute parallel for simd  </li>
+		<li>#pragma omp distribute parallel for                    </li>
+		<li>#pragma omp distribute parallel for simd	           </li>
+		<li>#pragma omp teams distribute parallel for              </li>
+		<li>#pragma omp teams distribute parallel for simd         </li>
+
+		
+</ul>
+
+

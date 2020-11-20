@@ -1,0 +1,13 @@
+<b>schedule</b><br>
+<b>Determining the Schedule of a Worksharing-Loop</b>
+<br>
+<br>
+When execution encounters a worksharing-loop directive, the schedule clause (if any) on the
+directive, and the run-sched-var and def-sched-var ICVs are used to determine how loop iterations
+are assigned to threads. 
+<br>
+<br>If the worksharing-loop directive does not have a schedule clause then the current
+value of the def-sched-var ICV determines the schedule. If the worksharing-loop directive has a
+schedule clause that specifies the runtime schedule kind then the current value of the
+run-sched-var ICV determines the schedule. Otherwise, the value of the schedule clause
+determines the schedule. 

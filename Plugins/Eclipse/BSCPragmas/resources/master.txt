@@ -1,0 +1,3 @@
+<b>master</b><br>
+
+The <b>master</b> construct specifies a structured block that is executed by the master thread of the team

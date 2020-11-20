@@ -1,0 +1,5 @@
+<b>copy_deps</b><br>
+
+
+copy_deps - It specifies that if the attached construct has any dependence clauses then they will also have copy semantics 
+(i.e., in will also be considered copy_in, output will also be considered copy_out and inout as copy_inout).

@@ -1,0 +1,7 @@
+<b>simdlen</b><br>
+
+The simdlen clause specifies the preferred number of iterations to be executed concurrently unless an
+
+if clause is present and evaluates to false, in which case the preferred number of iterations to be
+executed concurrently is one. The parameter of the simdlen clause must be a constant positive
+integer expression.

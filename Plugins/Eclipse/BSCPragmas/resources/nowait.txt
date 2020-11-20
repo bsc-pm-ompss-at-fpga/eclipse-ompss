@@ -1,0 +1,8 @@
+<b>nowait</b><br>
+
+A worksharing region has no <b>barrier </b>on entry; however, an implied <b>barrier </b> exists at the end of the
+worksharing region, unless a <b>nowait </b>clause is specified. If a <b>nowait</b> clause is present, an
+implementation may omit the <b>barrier </b> at the end of the worksharing region. In this case, threads that
+finish early may proceed straight to the instructions that follow the worksharing region without
+ waiting for the other members of the team to finish the worksharing region, and without performing
+ a flush operation

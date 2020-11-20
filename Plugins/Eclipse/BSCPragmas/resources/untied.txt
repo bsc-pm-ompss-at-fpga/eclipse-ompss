@@ -1,0 +1,6 @@
+<b>untied</b>
+<br>
+If the untied clause is present on a task construct, any   thread in the team can resume the task region after a suspension.
+<br>
+<br>
+The untied clause is ignored if a final clause is present on the same task construct and the final clause expression evaluates to true, or if a task is an included task.

@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es6",
+		"outDir": "out",
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"rootDir": "src"
+	},
+	"exclude": [
+		"node_modules",
+		".vscode-test"
+	],
+	"include": [
+		"src/**/*",
+	]
+}

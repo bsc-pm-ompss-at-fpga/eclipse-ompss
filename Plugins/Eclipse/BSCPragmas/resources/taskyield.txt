@@ -1,0 +1,8 @@
+<b> taskyield </b>
+<br>
+The taskyield construct specifies that the current task can be suspended in favor of execution of
+a different task. <br>
+The taskyield construct is a stand-alone directive
+<br>
+<br>
+#pragma omp taskyield

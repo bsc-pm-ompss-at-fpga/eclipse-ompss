@@ -1,0 +1,4 @@
+
+<b>threadprivate</b><br>
+The threadprivate directive specifies that variables are replicated, with each thread having its
+own copy. The threadprivate directive is a declarative directive.

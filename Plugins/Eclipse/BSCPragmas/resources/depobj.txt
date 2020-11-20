@@ -1,0 +1,18 @@
+<b>depobj</b><br>
+
+The depobj construct initializes, updates or destroys an OpenMP depend object. The depobj
+construct is a stand-alone directive.
+<br>
+<br>
+The syntax of the depobj construct is as follows:
+<br>
+<br>
+#pragma omp depobj(depobj) clause new-line<br>
+where depobj is an lvalue expression of type omp_depend_t.
+<br>
+<br>
+
+where clause is one of the following:<br><br>
+depend(dependence-type : locator)<br>
+destroy<br>
+update(dependence-type)<br>

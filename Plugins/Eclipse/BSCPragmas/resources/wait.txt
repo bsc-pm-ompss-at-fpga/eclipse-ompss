@@ -1,0 +1,5 @@
+when a task with the wait clause exits from its code,<br>
+the effects over the dependencies are equivalent to replacing <br>
+ the effects of its depend clause by that of the sequence of <br>
+ its unfinished subtasks. Moreover, this is equivalent<br>
+to merging its inner dependency domain into that of its parent.<br>

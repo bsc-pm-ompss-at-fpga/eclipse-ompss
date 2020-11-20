@@ -1,0 +1,31 @@
+<b> atomic </b><br>
+
+The <b> atomic </b> construct ensures that a specific storage location is accessed atomically, rather than 
+exposing it to the possibility of multiple, simultaneous reading and writing threads that may result 
+in indeterminate values.<br>
+
+<br><b>Syntax</b>
+In the following syntax, atomic-clause is a clause that indicates the semantics for which atomicity is
+enforced, memory-order-clause is a clause that indicates the memory ordering behavior of the
+construct and clause is a clause other than atomic-clause. Specifically, atomic-clause is one of the
+following
+
+<ul>
+<li>read</li>
+<li>write</li>
+<li>update</li>
+<li>capture</li>
+</ul><br><br>
+memory-order-clause is one of the following:
+
+<ul>
+<li>seq_cst</li>
+<li>acq_rel</li>
+<li>release</li>
+<li>acquire</li>
+<li>relaxed</li>
+</ul><br><br>
+and clause is either memory-order-clause or one of the following:<br>
+<ul>
+<li>hint(hint-expression</li>
+</ul><br>

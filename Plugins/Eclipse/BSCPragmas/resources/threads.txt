@@ -1,0 +1,3 @@
+<b>threads</b><br>
+If the threads clause is specified, the threads in the team that is executing the
+worksharing-loop region execute ordered regions sequentially in the order of the loop iterations

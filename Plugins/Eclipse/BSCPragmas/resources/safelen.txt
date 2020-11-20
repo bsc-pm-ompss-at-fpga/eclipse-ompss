@@ -1,0 +1,5 @@
+<b>safelen</b><br>
+
+The <b>safelen</b> clause specifies that no two concurrent iterations within a SIMD chunk can have a
+distance in the logical iteration space that is greater than or equal to the value given in the clause.
+The parameter of the <b>safelen</b> clause must be a constant positive integer expression. 

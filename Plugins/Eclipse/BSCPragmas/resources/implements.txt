@@ -1,0 +1,5 @@
+<b>implements</b><br>
+
+implements(function-name) 
+- It specifies that the code is an alternate implementation for the target devices of the function name specified in the clause.
+This alternate can be used instead of the original if the implementation considers it appropriately.

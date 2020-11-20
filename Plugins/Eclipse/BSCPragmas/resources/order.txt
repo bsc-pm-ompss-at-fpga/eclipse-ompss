@@ -1,0 +1,4 @@
+<b>order(concurrent)</b><br>
+If an order(concurrent) clause is present, then after assigning the iterations of the associated
+loops to their respective threads, the iterations may be executed in any
+order, including concurrently.

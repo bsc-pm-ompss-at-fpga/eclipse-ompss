@@ -1,0 +1,3 @@
+<b>simd</b><br>
+
+The simd construct can be applied to a loop to indicate that the loop can be transformed into a SIMD loop (that is, multiple iterations of the loop can be executed concurrently using SIMD instructions).

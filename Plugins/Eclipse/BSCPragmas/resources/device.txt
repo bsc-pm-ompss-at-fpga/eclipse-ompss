@@ -1,0 +1,8 @@
+<b>device</b><br>
+
+
+device(target-device) 
+
+- It allows to specify on which devices should be targeting the construct. 
+If no device clause is specified then the SMP device is assumed.
+Currently we also support the CUDA device that allows the execution of native CUDA kernels in GPGPUs.

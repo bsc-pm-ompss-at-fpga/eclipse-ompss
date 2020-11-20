@@ -1,0 +1,4 @@
+<b>distribute</b><br>
+The distribute construct specifies that the iterations of one or more loops will be executed by
+the initial teams in the context of their implicit tasks. The iterations are distributed across the initial
+threads of all initial teams that execute the teams region to which the distribute region binds

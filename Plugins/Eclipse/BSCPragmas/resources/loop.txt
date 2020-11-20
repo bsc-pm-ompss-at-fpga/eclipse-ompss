@@ -1,0 +1,8 @@
+<b>loop</b><br>
+
+A loop construct specifies that the iterations of the associated loops may execute concurrently and
+permits the encountering thread(s) to execute the loop accordingly.
+
+<br>
+If an end loop directive is not specified, an end loop directive is assumed at the end of the
+17 do-loops.

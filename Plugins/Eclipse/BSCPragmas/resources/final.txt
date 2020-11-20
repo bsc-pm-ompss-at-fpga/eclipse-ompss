@@ -1,0 +1,20 @@
+<b> final </b><br>
+When a final clause is present on a task construct and the final clause expression evaluates to true, <br>
+the generated task will be a final task. All task constructs encountered during execution of a final  <br>
+task will generate final and included tasks. Note that the use of a variable in a final clause expression <br>
+of a task construct causes an implicit reference to the variable in all enclosing constructs.<br>
+
+<br>
+
+<b>Final Task: </b><br>
+A task that forces all of its child tasks to become final and included tasks.<br><br>
+
+<b>Included Task> </b><br>
+A task for which execution is sequentially included in the generating task region. <br>
+That is, an included task is undeferred and executed immediately by the encountering thread.<br>
+
+
+<br>
+<b>Example></b><br>
+int val = get(); <br>
+#pragma omp parallel final(val <= THRESHOLD) <br>

@@ -1,0 +1,4 @@
+<b>private</b><br>
+<b>variable-type(var1, var2 ...)</b> <br>
+
+The variables affected by this directive will have a shared copy  between all the tasks. <br>

@@ -1,0 +1,4 @@
+<b>aligned</b><br>
+
+The aligned clause declares that the object to which each list item points is aligned to the
+number of bytes expressed in the optional parameter of the aligned clause

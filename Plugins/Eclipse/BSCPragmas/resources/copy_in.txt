@@ -1,0 +1,3 @@
+<b>copy_in</b><br>
+
+copy_in(list-of-variables) - It specifies that a set of shared data may be needed to be transferred to the device before the associated code can be executed.

@@ -1,0 +1,3 @@
+<b>requires</b><br>
+The requires directive specifies the features that an implementation must provide in order for
+the code to compile and to execute correctly. The requires directive is a declarative directive

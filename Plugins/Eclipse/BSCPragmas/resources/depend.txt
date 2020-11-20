@@ -1,0 +1,29 @@
+<b>depend:dependence-type(var1, var2 ...)</b> <br>
+<b> in </b> <br>
+The generated task will be a dependent task of all previously <br>
+generated sibling tasks that reference at least one of the <br>
+list items in an <b>in</b>, or an <b>inout</b> clause if our dependence type is <b>in</b><br>
+and on  <b>in</b>, <b>out</b>, or <b>inout</b if our dependence type is <b>inout</b> or <b>out</b><br>
+<br>
+Sintaxis:<br>
+<br>
+depend(inout:[VAR], [VAR2]...)<br>
+depend(in:[VAR], [VAR2]...)<br>
+depend(out:[VAR], [VAR2]...)<br>
+<br>
+where VAR can be:<br>
+A single variable: <b>inout(a)</b> <br>
+An element of an array:  <b>inout(a[3])</b> <br>
+A range of elements of an array.  <b>inout(a[0:32+i])</b> <br>
+<br>
+examples:<br>
+<br>
+<b>OmpSs: </b><br>
+<br>
+#pragma omp task <b>depend(inout: a[jj+32:N-1][j], b)</b><br>
+#pragma omp task <b>depend(out:a, b, c[0:32][15:31])</b><br>
+<br>
+<b>OmpSs2:</b><br>
+
+#pragma oss task <b>depend(inout:a[0:32], b)</b> <br>
+#pragma oss task <b>depend(in:a, b)</b>

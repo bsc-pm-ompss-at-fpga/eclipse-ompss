@@ -1,0 +1,5 @@
+<b>Worksharing-Loop Construct</b><br>
+The worksharing-loop construct specifies that the iterations of one or more associated loops will be
+executed in parallel by threads in the team in the context of their implicit tasks. The iterations are
+distributed across threads that already exist in the team that is executing the parallel region to
+which the worksharing-loop region binds.

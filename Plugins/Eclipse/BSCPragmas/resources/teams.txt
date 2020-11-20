@@ -1,0 +1,3 @@
+<b>teams</b><br>
+The <b>teams </b>construct creates a league of initial teams and the initial thread in each team executes
+the region.

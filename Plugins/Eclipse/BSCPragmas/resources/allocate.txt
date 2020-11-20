@@ -1,0 +1,20 @@
+<b> allocate </b>
+
+The allocate clause specifies the memory allocator to be used to obtain storage for private variables of a directive.
+
+<br><b>Syntax</b>
+The syntax of the allocate clause is as follows:
+<br>allocate([allocator:] list)<br>
+where allocator is an expression of the omp_allocator_handle_t type.
+<br>
+
+
+<b>Description</b>
+The storage for new list items that arise from list items that appear in the directive will be provided <br>
+through a memory allocator. If an allocator is specified in the clause, that allocator will be used for <br>
+allocations. For all directives except the target directive, if no allocator is specified in the clause <br>
+then the memory allocator that is specified by the def-allocator-var ICV will be used for the list <br>
+items that are specified in the allocate clause. The allocation of each list item will be byte <br>
+aligned to at least the alignment required by the base language for the type of that list item. <br>
+For allocations that arise from this clause the null_fb value of the fallback allocator trait will <br>
+behave as if the abort_fb had been specified. <br>

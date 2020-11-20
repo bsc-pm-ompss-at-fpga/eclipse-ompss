@@ -1,0 +1,27 @@
+<b>ordered</b><br>
+
+The <b>ordered</b> construct either specifies a structured block in a worksharing-loop, <b>simd</b>, or
+worksharing-loop SIMD region that will be executed in the order of the loop iterations, or it is a
+stand-alone directive that specifies cross-iteration dependences in a doacross loop nest. The
+<b>ordered</b> construct sequentializes and orders the execution of <b>ordered</b> regions while allowing
+code outside the region to run in parallel.
+<br>
+<br>
+The syntax of the <b>ordered</b> construct is as follows:
+<br>
+<b>#pragma omp ordered </b>[clause[ [,] clause] ] new-line
+<br>
+    structured-block<br>
+
+where clause is one of the following:
+<br>
+<br>
+
+threads<br>
+simd<br>
+or<br>
+
+<b>#pragma omp ordered </b> clause [[[,] clause] ... ] new-line<br>
+where clause is one of the following:<br><br>
+depend(source)<br>
+depend(sink : vec)<br>

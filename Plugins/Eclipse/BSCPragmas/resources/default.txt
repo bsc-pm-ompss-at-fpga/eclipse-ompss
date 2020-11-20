@@ -1,0 +1,3 @@
+<b>default</b>
+<br>
+The default clause explicitly determines the data-sharing attributes of variables that are referenced in a parallel, teams, or task generating construct and would otherwise be implicitly determined

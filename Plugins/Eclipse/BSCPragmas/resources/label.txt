@@ -1,0 +1,4 @@
+<b>label</b>
+The label clause defines a string literal that can be used by any performance or debugger tool to identify the task with a more human-readable format.<br>
+Syntax:<br>
+label("[string]")

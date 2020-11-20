@@ -1,0 +1,13 @@
+<b>num_instances</b><br>
+
+Defines the number of instances to place in the FPGA bitstream of a task. Usage example:
+
+const unsigned int LEN = 8;
+
+#pragma omp target device(fpga) num_instances(3)
+#pragma omp task out([LEN]dst)
+void memset(char * dst, const char val) {
+  for (unsigned int i=0; i<LEN; ++i) {
+    dst[i] = val;
+  }
+}

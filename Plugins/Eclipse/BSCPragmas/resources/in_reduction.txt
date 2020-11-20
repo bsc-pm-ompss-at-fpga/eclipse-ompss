@@ -1,0 +1,25 @@
+<b>in_reduction</b><br>
+
+The in_reduction clause specifies that a task participates in a reduction.
+
+
+For a given a list item, the in_reduction clause defines a task to be a participant
+in a task reduction that is defined by an enclosing region for a matching list item that appears in a
+task_reduction clause or a reduction clause with the task modifier, where either:
+<br>
+<br>
+		1. The matching list item has the same storage location as the list item in the in_reduction
+clause; or<br>
+		2. A private copy, derived from the matching list item, that is used to perform the task reduction
+has the same storage location as the list item in the in_reduction clause.
+<br>
+<br>
+
+For the task construct, the generated task becomes the participating task. For each list item, a
+private copy may be created as if the private clause had been used.
+For the target construct, the target task becomes the participating task. For each list item, a
+private copy will be created in the data environment of the target task as if the private clause had
+been used, and this private copy will be implicitly mapped into the device data environment of the
+target device.
+At the end of the task region, if a private copy was created its value is combined with a copy created
+by a reduction scoping clause or with the original list item.

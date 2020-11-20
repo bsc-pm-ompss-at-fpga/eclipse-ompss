@@ -1,0 +1,3 @@
+<b>scan</b><br>
+
+The <b>scan</b> directive specifies that scan computations update the list items on each iteration.

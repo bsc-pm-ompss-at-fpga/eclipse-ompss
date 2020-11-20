@@ -1,0 +1,23 @@
+<b> task </b> <br>
+
+The programmer can specify a task using the <b>task</b> construct. <br>
+This construct can appear inside any code block of the program, which will mark the following statement as a task.<br>
+
+<ul>
+<li>#pragma oss task [clauses]</li>
+<li>structured-block</li>
+</ul>
+
+<ul>
+<li>private(&lt;list&gt;)</li>
+<li>firstprivate(&lt;list&gt;)</li>
+<li>shared(&lt;list&gt;)</li>
+<li>depend(&lt;type&gt;: &lt;memory-reference-list&gt;)</li>
+<li>&lt;depend-type&gt;(&lt;memory-reference-list&gt;)</li>
+<li>priority(&lt;expresion&gt;)</li>
+<li>cost(&lt;expresion&gt;)</li>
+<li>if(&lt;scalar-expression&gt;)</li>
+<li>final(&lt;scalar-expresion&gt;)</li>
+<li>label(&lt;string&gt;)</li>
+<li>[ wait | weakwait ]</li>
+</ul>

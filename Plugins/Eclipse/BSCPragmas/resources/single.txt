@@ -1,0 +1,5 @@
+<b>single</b><br>
+The <b>single</b> construct specifies that the associated structured block is executed by only one
+of the threads in the team (not necessarily the master thread), in the context of its implicit task.
+The other threads in the team, which do not execute the block, wait at an implicit barrier at the end
+of the single construct unless a nowait clause is specified.

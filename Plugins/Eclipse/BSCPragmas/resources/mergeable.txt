@@ -1,0 +1,2 @@
+<b>mergeable</b><br>
+When the mergeable clause is present on a task construct, the generated task is a mergeable task.

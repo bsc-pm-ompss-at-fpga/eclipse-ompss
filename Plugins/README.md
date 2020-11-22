@@ -7,7 +7,7 @@ In order to compile and package the plugins, we must run the following JAVA appl
 
 # Eclipse Plugin
 
-[Eclipse Plugin](Eclipse/README.md) is a plugin for Eclipse-based IDEs, which adds the capability of autocomplete C/C++  OmpSS@FPGA  and Xilinx HLS pragmas.
+[Eclipse Plugin](Eclipse/README.md) is a plugin for Eclipse-based IDEs, which adds the capability of autocomplete C/C++  OmpSs@FPGA  and Xilinx HLS pragmas.
 
 # Theia Plugin
 

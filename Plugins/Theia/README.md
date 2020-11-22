@@ -17,5 +17,5 @@ After that, you can create the .vsix (installable package) with the command:
 
 ``npm install && vsce package``
 
-This will generate the "OmpSS-completion-1.0.0.vsix" extension, which can be used in Theia and VsCode.
+This will generate the "OmpSs-completion-1.0.0.vsix" extension, which can be used in Theia and VsCode.
 

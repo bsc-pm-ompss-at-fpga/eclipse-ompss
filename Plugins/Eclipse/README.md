@@ -20,7 +20,7 @@ entry from the "Help" menu.
 
 # Open Eclipse
 ![](images/1.png)
-# Open Projects from FS
+# Open Projects from File System
 
 ![](images/2.png)
 
@@ -38,17 +38,38 @@ entry from the "Help" menu.
 
 # Synchronize OmpSs Autocompletion Features project with BSCPragmas
 
-Display the file "features.xml" in OmpSs Autocompletion Features, and use
-the "synchronize" button to synchronize it with BSCPragmas
+DSelect an display the file "features.xml" in OmpSs Autocompletion Features, and use the "synchronize" button to synchronize it with BSCPragmas.
+
+When asked about the synchronization method, select "Synchronize versions on build (recommended)"
 
 ![](images/6.png)
 
 # Synchronize and build the repository
 
+Select and display the file "site.xml" from the BSCPL project, and
+ - Synchronize (selected features only)
+ - Build All
+
+
 ![](images/7.png)
 
-# Now, you can open your eclipse installation and install the plugin
+# Now, you can install the plugin in your Eclipse installation
 
-To do so, go to help/install-new-software, and add the BSCPL project. 
-You can share this BSCPL project and zip it in order to distribute the plugin.
+To do so, go to Help/Install New Software..., and add the BSCPL directory 
+containing the project.
+
 ![](images/8.png)
+
+You can also build a zip file with the contents of the directory
+ - eclipse-ompss/Plugins/Eclipse/BSCPL
+
+For example:
+ - cd eclipse-ompss/Plugins/Eclipse
+ - zip -r BSCPL.zip BSCPL
+
+And go to Help/Install New Software..., and add the BSCPL.zip, containing
+the  project. 
+
+You can share this BSCPL.zip project in order to distribute the plugin to
+other users.
+

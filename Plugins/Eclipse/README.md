@@ -66,13 +66,12 @@ You can also build a zip file with the contents of the directory
  - eclipse-ompss/Plugins/Eclipse/BSCPL
 
 For example:
- - cd eclipse-ompss/Plugins/Eclipse
- - zip -r BSCPL.zip BSCPL
+ - cd eclipse-ompss/Plugins/Eclipse/BSCPL
+ - zip -r ../BSCPL.zip "."
 
 And go to Help/Install New Software..., and add the BSCPL.zip, containing
-the  project. 
+the project. 
 
 You can share this BSCPL.zip project in order to distribute the plugin to
 other users.
-
 

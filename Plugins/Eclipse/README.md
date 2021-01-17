@@ -6,7 +6,15 @@ This project is divided in three parts.
 2. Eclipse Feature Project (OmpSs Autocompletion Features)
 3. Eclipse P2 repository (BSCPL)
 
-This is due to the way Eclipse accepts plugins to be installed. For ease of use, these projects must be created using Eclipse.
+This is due to the way Eclipse accepts plugins to be installed. For ease of use, these projects must be created using Eclipse, following these instructions:
+
+# Requirements
+Eclipse requires a Java JRE or JDK version 8 or newer.
+The installation of plugins in Eclipse requires to have the support for
+   - Eclipse PDE Plug-in Developer Resources
+   - Oomph Setup PDE
+You can install them from Eclipse itself using the "Install New Software..."
+entry from the "Help" menu.
 
 
 # Open Eclipse

@@ -28,15 +28,18 @@ entry from the "Help" menu.
 
 ![](images/3.png)
 
-# Unselect ECLIPSE and finish te configuration
+# Unselect ECLIPSE and finish the configuration
 
 ![](images/4.png)
 
-# Check that the resources folder has the tree/tokens.json
+# Check that the resources folder has the tree/tokens.json files
 
 ![](images/5.png)
 
-# Synchronize the project OmpSs Autocompletion Features with BSCPragmas using the "synchronize" button
+# Synchronize OmpSs Autocompletion Features project with BSCPragmas
+
+Display the file "features.xml" in OmpSs Autocompletion Features, and use
+the "synchronize" button to synchronize it with BSCPragmas
 
 ![](images/6.png)
 

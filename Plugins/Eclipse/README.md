@@ -60,6 +60,8 @@ containing the project.
 
 ![](images/8.png)
 
+When installed, you will need to restart the Eclipse process, in order for the new plugin to become active.
+
 You can also build a zip file with the contents of the directory
  - eclipse-ompss/Plugins/Eclipse/BSCPL
 
@@ -72,4 +74,5 @@ the  project.
 
 You can share this BSCPL.zip project in order to distribute the plugin to
 other users.
+
 

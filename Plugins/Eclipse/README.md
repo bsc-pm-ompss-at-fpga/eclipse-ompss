@@ -31,11 +31,11 @@ entry from the "Help" menu.
 
 ![](images/4.png)
 
-# Check that the resources folder has the tree/token.json
+# Check that the resources folder has the tree/tokens.json
 
 ![](images/5.png)
 
-# Synchronize the project with BSCPRagmas using the button
+# Synchronize the project OmpSs Autocompletion Features with BSCPragmas using the "synchronize" button
 
 ![](images/6.png)
 
